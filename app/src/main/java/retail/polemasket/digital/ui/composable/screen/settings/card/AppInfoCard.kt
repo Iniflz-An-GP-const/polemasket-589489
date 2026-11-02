@@ -27,6 +27,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import retail.polemasket.digital.R
@@ -34,6 +35,7 @@ import retail.polemasket.digital.ui.theme.LocalDimens
 import retail.polemasket.digital.ui.theme.cardBorderStroke
 import retail.polemasket.digital.ui.theme.controlBorderStroke
 import retail.polemasket.digital.ui.theme.imageBorder
+import java.time.Year
 
 private val LogoSize = 56.dp
 private val TrailingIconSize = 20.dp
@@ -99,6 +101,14 @@ fun AppInfoCard(modifier: Modifier = Modifier) {
         }
 
         CustomerSupportCard(modifier = Modifier.fillMaxWidth())
+
+        Text(
+            text = stringResource(R.string.settings_screen_copyright, Year.now().value, companyName),
+            modifier = Modifier.fillMaxWidth(),
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            style = MaterialTheme.typography.bodySmall,
+            textAlign = TextAlign.Center,
+        )
     }
 }
 

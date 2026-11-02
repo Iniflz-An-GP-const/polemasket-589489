@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -35,6 +36,7 @@ fun DataEmptyContent(
         Text(
             text = primaryText,
             fontSize = 18.sp,
+            textAlign = TextAlign.Center,
             style = MaterialTheme.typography.titleLarge,
         )
 
@@ -42,6 +44,7 @@ fun DataEmptyContent(
             Text(
                 text = it,
                 fontSize = 16.sp,
+            textAlign = TextAlign.Center,
                 style = MaterialTheme.typography.bodyMedium,
             )
         }

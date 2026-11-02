@@ -1,9 +1,15 @@
 package retail.polemasket.digital.ui.composable.approot
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Book
 import androidx.compose.material.icons.filled.Home
@@ -13,6 +19,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.navigation.NavDestination
@@ -27,6 +34,7 @@ import retail.polemasket.digital.ui.composable.approot.bottombar.AppBottomBar
 import retail.polemasket.digital.ui.composable.approot.topbar.AppTopBar
 import retail.polemasket.digital.ui.composable.navigation.AppNavHost
 import retail.polemasket.digital.ui.composable.navigation.NavRoute
+import retail.polemasket.digital.ui.theme.Primary
 import retail.polemasket.digital.ui.theme.StatusBarIconsFor
 import kotlin.reflect.KClass
 
@@ -83,14 +91,24 @@ fun AppRoot() {
         }
     }
 
-    AppRootContent(
-        navController = navController,
-        currentDestination = currentDestination,
-        shouldShowTopBar = shouldShowTopBar,
-        shouldShowBottomBar = shouldShowBottomBar,
-        onNavigateToRoute = onNavigateToRoute,
-        onNavigateBack = { navController.popBackStack() }
-    )
+    Box(modifier = Modifier.fillMaxSize()) {
+        AppRootContent(
+            navController = navController,
+            currentDestination = currentDestination,
+            shouldShowTopBar = shouldShowTopBar,
+            shouldShowBottomBar = shouldShowBottomBar,
+            onNavigateToRoute = onNavigateToRoute,
+            onNavigateBack = { navController.popBackStack() }
+        )
+
+        Box(
+            modifier = Modifier
+                .align(Alignment.TopCenter)
+                .fillMaxWidth()
+                .windowInsetsTopHeight(WindowInsets.statusBars)
+                .background(Primary)
+        )
+    }
 }
 
 @Composable
@@ -112,7 +130,7 @@ private fun AppRootContent(
             } else {
                 // No top bar here, so the status bar sits on the screen's own
                 // background — the top bar variants handle the other case.
-                StatusBarIconsFor(MaterialTheme.colorScheme.background)
+                StatusBarIconsFor(Primary)
             }
         },
 

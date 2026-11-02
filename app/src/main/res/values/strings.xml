@@ -72,8 +72,8 @@
     <string name="checkout_text_field_email">Email</string>
     <string name="checkout_email_supporting_text">The booking confirmation goes to this address</string>
     <string name="checkout_email_error_text">Enter a valid email, for example name@example.com</string>
-    <string name="checkout_text_field_date_time">Date &amp; Time</string>
-    <string name="checkout_date_time_placeholder">Select date and time</string>
+    <string name="checkout_text_field_date_time">Date</string>
+    <string name="checkout_date_time_placeholder">Select date</string>
     <string name="checkout_date_time_dialog_time_label">Available times (8:00–16:00)</string>
     <string name="checkout_date_time_dialog_confirm">Confirm</string>
     <string name="checkout_date_time_dialog_cancel">Cancel</string>
@@ -109,5 +109,6 @@
     <string name="rladl_company_name" translatable="false">Retail trade of motor vehicle parts and accessories</string>
 
     <string name="settings_screen_customer_support_label">Customer Support</string>
+    <string name="settings_screen_copyright">© %1$d %2$s. All rights reserved.</string>
     <string name="rladl_customer_support_link" translatable="false">https://mrmagician-entertainment-booking.click</string>
 </resources>

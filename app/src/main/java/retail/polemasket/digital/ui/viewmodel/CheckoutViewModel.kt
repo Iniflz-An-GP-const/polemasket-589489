@@ -2,6 +2,7 @@ package retail.polemasket.digital.ui.viewmodel
 
 import android.util.Patterns
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
@@ -15,7 +16,9 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import java.time.LocalDate
 import java.time.LocalDateTime
+import java.time.LocalTime
 
 class CheckoutViewModel(
     private val bookingRepository: BookingRepository,
@@ -37,11 +40,16 @@ class CheckoutViewModel(
     var customerEmail by mutableStateOf("")
         private set
 
-    // Nullable, not defaulted to "now": there is no valid default booking
-    // time (see `BookingWindow`), so "unset" has to be a real, distinct
-    // state the user must resolve, same as the empty-string fields above.
-    var customerDateTime by mutableStateOf<LocalDateTime?>(null)
+    // Nullable, not defaulted to "today": the user must pick the date, same
+    // as the empty-string fields above. The hour always has a slot selected.
+    var customerDate by mutableStateOf<LocalDate?>(null)
         private set
+
+    var customerHour by mutableIntStateOf(BookingWindow.START_HOUR)
+        private set
+
+    val customerDateTime: LocalDateTime?
+        get() = customerDate?.let { LocalDateTime.of(it, LocalTime.of(customerHour, 0)) }
 
     fun updateCustomerFirstName(input: String) {
         customerFirstName = input
@@ -58,8 +66,17 @@ class CheckoutViewModel(
         }
     }
 
-    fun updateCustomerDateTime(dateTime: LocalDateTime) {
-        customerDateTime = dateTime
+    fun updateCustomerDate(date: LocalDate) {
+        customerDate = date
+        // Keep the selected slot if it is still free on the new date,
+        // otherwise move to the first free one.
+        if (!BookingWindow.isValid(date, customerHour)) {
+            BookingWindow.firstValidHour(date)?.let { customerHour = it }
+        }
+    }
+
+    fun updateCustomerHour(hour: Int) {
+        customerHour = hour
     }
 
     fun placeBooking(serviceId: Int) {

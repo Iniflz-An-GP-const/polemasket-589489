@@ -32,13 +32,17 @@ import retail.polemasket.digital.R
 import retail.polemasket.digital.ui.theme.LocalDimens
 import kotlinx.coroutines.delay
 
-private const val LOGO_ANIMATION_DURATION_MS = 850
-private const val TEXT_ANIMATION_DURATION_MS = 500
-private const val RULE_ANIMATION_DURATION_MS = 550
+private const val LOGO_ANIMATION_DURATION_MS = 450
+private const val TEXT_ANIMATION_DURATION_MS = 200
+private const val RULE_ANIMATION_DURATION_MS = 200
 
-private const val STAGGER_DELAY_MS = 150L
+private const val STAGGER_DELAY_MS = 50L
+
+// Total splash time: 450 + 50 + 200 + 50 + 200 + 50 + 200 = 1200 ms.
 
 private val LogoSize = 132.dp
+private val LogoCornerRadius = 36.dp
+private val SplashCornerRadius = 48.dp
 private val TextRise = 16.dp
 private val RuleWidth = 72.dp
 private val RuleHeight = 3.dp
@@ -79,6 +83,7 @@ fun SplashContent(
     Box(
         modifier = modifier
             .fillMaxSize()
+            .clip(RoundedCornerShape(SplashCornerRadius))
             .background(MaterialTheme.colorScheme.background),
         contentAlignment = Alignment.Center,
     ) {
@@ -88,7 +93,7 @@ fun SplashContent(
                 contentDescription = stringResource(R.string.rladl_app_logo_description),
                 modifier = Modifier
                     .size(LogoSize)
-                    .clip(RoundedCornerShape(dimens.cardCornerRadius))
+                    .clip(RoundedCornerShape(LogoCornerRadius))
                     .graphicsLayer {
                         alpha = logo.value
                         val logoScale = 0.9f + 0.1f * logo.value

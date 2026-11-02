@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.navDeepLink
 import androidx.navigation.toRoute
 import retail.polemasket.digital.ui.composable.screen.bookings.RLADLBookingsScreen
 import retail.polemasket.digital.ui.composable.screen.checkout.RLADLCheckoutScreen
@@ -58,7 +59,9 @@ fun AppNavHost(
             )
         }
 
-        composable<NavRoute.Home> {
+        composable<NavRoute.Home>(
+            deepLinks = listOf(navDeepLink { uriPattern = "polemasket://app/home" })
+        ) {
             RLADLHomeScreen(
                 onNavigateToServiceDetails = { serviceId: Int ->
                     navController.navigate(
@@ -68,7 +71,9 @@ fun AppNavHost(
             )
         }
 
-        composable<NavRoute.ServiceDetails> { backStackEntry ->
+        composable<NavRoute.ServiceDetails>(
+            deepLinks = listOf(navDeepLink { uriPattern = "polemasket://app/service/{serviceId}" })
+        ) { backStackEntry ->
             val serviceDetails: NavRoute.ServiceDetails = backStackEntry.toRoute()
             RLADLServiceDetailsScreen(
                 serviceId = serviceDetails.serviceId,
@@ -80,7 +85,9 @@ fun AppNavHost(
             )
         }
 
-        composable<NavRoute.Checkout> { backStackEntry ->
+        composable<NavRoute.Checkout>(
+            deepLinks = listOf(navDeepLink { uriPattern = "polemasket://app/checkout/{serviceId}" })
+        ) { backStackEntry ->
             val checkout: NavRoute.Checkout = backStackEntry.toRoute()
             RLADLCheckoutScreen(
                 serviceId = checkout.serviceId,
@@ -95,11 +102,15 @@ fun AppNavHost(
             )
         }
 
-        composable<NavRoute.Bookings> {
+        composable<NavRoute.Bookings>(
+            deepLinks = listOf(navDeepLink { uriPattern = "polemasket://app/bookings" })
+        ) {
             RLADLBookingsScreen()
         }
 
-        composable<NavRoute.Settings> {
+        composable<NavRoute.Settings>(
+            deepLinks = listOf(navDeepLink { uriPattern = "polemasket://app/settings" })
+        ) {
             RLADLSettingsScreen()
         }
     }

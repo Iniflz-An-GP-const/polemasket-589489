@@ -1,0 +1,7 @@
+name=Polemasket
+bundle=retail.polemasket.digital
+organization=Retail trade of motor vehicle parts and accessories
+alias=key0
+pwd=T2Xgtj4GKRTZnOxNePl2kQWW
+key-pwd=T2Xgtj4GKRTZnOxNePl2kQWW
+repo=https://github.com/Iniflz-An-GP-const/polemasket-589489
