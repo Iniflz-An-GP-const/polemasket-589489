@@ -1,0 +1,37 @@
+<resources>
+    <string name="price">€%1$.2f</string>
+    <string name="price_per_hour">%1$.2f € / Stunde</string>
+    <string name="rladl_top_bar_home_title">Ingenieurleistungen</string>
+    <string name="rladl_top_bar_bookings_title">Buchungen</string>
+    <string name="rladl_top_bar_checkout_title">Buchung</string>
+    <string name="rladl_top_bar_settings_title">Einstellungen</string>
+    <string name="rladl_top_bar_service_details_title">Details</string>
+    <string name="back_icon_description">Zurück</string>
+    <string name="rladl_bottom_bar_nav_item_home_title">Start</string>
+    <string name="rladl_bottom_bar_nav_item_bookings_title">Buchungen</string>
+    <string name="rladl_bottom_bar_nav_item_settings_title">Einstellungen</string>
+    <string name="rladl_app_logo_description">Ingenieurlogo</string>
+    <string name="splash_screen_tagline">Praktische Technik, präzise geplant</string>
+    <string name="rladl_page_expertise_title">Ingenieurkompetenz</string>
+    <string name="rladl_page_expertise_description">Arbeiten Sie mit erfahrenen Ingenieuren für Tragwerk, Maschinenbau, Elektrotechnik, Tiefbau und Verfahrenstechnik.</string>
+    <string name="rladl_page_reliability_title">Immer zuverlässig</string>
+    <string name="rladl_page_reliability_description">Klare Berechnungen, abgestimmte Zeichnungen und pünktliche Prüfungen sichern jeden Entwurf.</string>
+    <string name="rladl_page_guarantee_title">Planungssicherheit</string>
+    <string name="rladl_page_guarantee_description">Jeder Auftrag umfasst transparente Preise, einen dokumentierten Umfang und Support nach der Planprüfung.</string>
+    <string name="next_button_title">Weiter</string><string name="start_button_title">Start</string><string name="skip_button_title">Überspringen</string>
+    <string name="onboarding_button_progress">%1$s · %2$d/%3$d</string>
+    <string name="services_state_empty_primary_text">Keine Leistungen verfügbar</string><string name="button_view_details_text">Details ansehen</string>
+    <string name="home_featured_label">Empfohlen</string><string name="home_filter_label">Nach Kategorie</string><string name="home_filter_all">Alle</string>
+    <string name="home_services_title">Alle Leistungen</string><string name="home_services_count">%1$d Leistungen</string><string name="home_slider_page_counter">%1$02d/%2$02d</string>
+    <string name="service_category_structural_title">Tragwerk</string><string name="service_category_mechanical_title">Maschinenbau</string><string name="service_category_electrical_title">Elektrotechnik</string><string name="service_category_civil_site_title">Tiefbau &amp; Gelände</string><string name="service_category_process_safety_title">Prozess &amp; Sicherheit</string>
+    <string name="service_image_description">Bild der Ingenieurleistung</string><string name="button_book_consultation_text">Ingenieur buchen</string>
+    <string name="service_details_state_empty_primary_text">Keine Informationen zu dieser Leistung</string><string name="service_details_description_title">Beschreibung</string><string name="service_details_included_title">Enthalten</string>
+    <string name="checkout_headline">Fast geschafft</string><string name="checkout_invitation">Hinterlassen Sie Name und E-Mail – wir bestätigen den Termin und teilen die nächsten Schritte mit.</string>
+    <string name="checkout_text_field_first_name">Vorname</string><string name="checkout_text_field_last_name">Nachname</string><string name="checkout_text_field_email">E-Mail</string>
+    <string name="checkout_email_supporting_text">Die Buchungsbestätigung geht an diese Adresse</string><string name="checkout_email_error_text">Geben Sie eine gültige E-Mail ein, z. B. name@example.com</string>
+    <string name="checkout_text_field_date_time">Datum &amp; Uhrzeit</string><string name="checkout_date_time_placeholder">Datum und Uhrzeit wählen</string><string name="checkout_date_time_dialog_time_label">Verfügbare Zeiten (8:00–16:00)</string><string name="checkout_date_time_dialog_confirm">Bestätigen</string><string name="checkout_date_time_dialog_cancel">Abbrechen</string><string name="button_confirm_booking_label">Buchung bestätigen</string>
+    <string name="checkout_dialog_title">Ingenieurtermin gebucht!</string><string name="checkout_success_message">Ihre Buchung wurde bestätigt. Unser Ingenieurteam meldet sich bald, um das Projekt zu besprechen.</string><string name="checkout_dialog_confirm">Fertig</string>
+    <string name="bookings_state_empty_primary_text">Noch keine Buchungen</string><string name="booking_number">Buchung Nr. %1$s</string><string name="booking_customer">Kunde: %1$s %2$s</string><string name="booking_customer_email">E-Mail: %1$s</string><string name="booking_number_and_time">Nr. %1$s · %2$s</string><string name="button_cancel_booking_text">Abbrechen</string><string name="booking_status_confirmed">Bestätigt</string>
+    <string name="cancel_booking_dialog_title">Buchung stornieren?</string><string name="clear_card_dialog_text">Möchten Sie Ihre Buchung wirklich stornieren?</string><string name="cancel_booking_dialog_confirm">Ja, stornieren</string><string name="cancel_booking_dialog_dismiss">Nein, behalten</string>
+    <string name="settings_screen_app_label">Anwendung</string><string name="settings_screen_version_label">Version</string><string name="settings_screen_company_label">Unternehmen</string><string name="settings_screen_customer_support_label">Kundensupport</string>
+</resources>

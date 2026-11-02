@@ -3,10 +3,10 @@
 
     <!-- shared -->
     <string name="price">$%1$.2f</string>
-    <string name="price_per_hour">$%1$.2f / per hour</string>
+    <string name="price_per_hour">$%1$.2f / hour</string>
 
     <!-- top bar titles -->
-    <string name="rladl_top_bar_home_title">App Title</string>
+    <string name="rladl_top_bar_home_title">Engineering Services</string>
     <string name="rladl_top_bar_bookings_title">Bookings</string>
     <string name="rladl_top_bar_checkout_title">Checkout</string>
     <string name="rladl_top_bar_settings_title">Settings</string>
@@ -19,18 +19,18 @@
     <string name="rladl_bottom_bar_nav_item_settings_title">Settings</string>
 
     <!-- splash screen -->
-    <string name="rladl_app_logo_description">App logo</string>
-    <string name="splash_screen_tagline">Expert guidance you can rely on</string>
+    <string name="rladl_app_logo_description">Engineering logo</string>
+    <string name="splash_screen_tagline">Practical engineering, precisely planned</string>
 
     <!-- onboarding screen -->
-    <string name="rladl_page_expertise_title">Expert Consultants</string>
-    <string name="rladl_page_expertise_description">Work with vetted professionals in business, finance, and IT who bring real industry experience to every session.</string>
+    <string name="rladl_page_expertise_title">Engineering Expertise</string>
+    <string name="rladl_page_expertise_description">Work with experienced engineers in structural, mechanical, electrical, civil, and process disciplines.</string>
 
     <string name="rladl_page_reliability_title">Reliable, Every Time</string>
-    <string name="rladl_page_reliability_description">Verified specialists, on-time sessions, and consistent support — dependable service you can count on.</string>
+    <string name="rladl_page_reliability_description">Clear calculations, coordinated drawings, and timely reviews keep every design dependable.</string>
 
-    <string name="rladl_page_guarantee_title">Backed by Guarantees</string>
-    <string name="rladl_page_guarantee_description">Every consultation comes with transparent pricing, a satisfaction guarantee, and support after the session ends.</string>
+    <string name="rladl_page_guarantee_title">Design Confidence</string>
+    <string name="rladl_page_guarantee_description">Every engagement includes transparent pricing, documented scope, and support after the design review.</string>
 
     <string name="next_button_title">Next</string>
     <string name="start_button_title">Start</string>
@@ -51,21 +51,26 @@
     <string name="home_slider_page_counter">%1$02d/%2$02d</string>
 
     <!-- service categories -->
+    <string name="service_category_structural_title">Structural</string>
+    <string name="service_category_mechanical_title">Mechanical</string>
+    <string name="service_category_electrical_title">Electrical</string>
+    <string name="service_category_civil_site_title">Civil &amp; Site</string>
+    <string name="service_category_process_safety_title">Process &amp; Safety</string>
 
     <!-- service details screen -->
-    <string name="service_image_description">Service image</string>
-    <string name="button_book_consultation_text">Book Consultation</string>
+    <string name="service_image_description">Engineering service image</string>
+    <string name="button_book_consultation_text">Book Engineer</string>
     <string name="service_details_state_empty_primary_text">No information available about this service</string>
     <string name="service_details_description_title">Description</string>
     <string name="service_details_included_title">What\'s Included</string>
 
     <!-- checkout screen -->
     <string name="checkout_headline">Almost there</string>
-    <string name="checkout_invitation">Leave your name and email – we\'ll confirm the order and keep you posted on delivery.</string>
+    <string name="checkout_invitation">Leave your name and email – we\'ll confirm the session and share the next steps.</string>
     <string name="checkout_text_field_first_name">First Name</string>
     <string name="checkout_text_field_last_name">Last Name</string>
     <string name="checkout_text_field_email">Email</string>
-    <string name="checkout_email_supporting_text">The order confirmation goes to this address</string>
+    <string name="checkout_email_supporting_text">The booking confirmation goes to this address</string>
     <string name="checkout_email_error_text">Enter a valid email, for example name@example.com</string>
     <string name="checkout_text_field_date_time">Date &amp; Time</string>
     <string name="checkout_date_time_placeholder">Select date and time</string>
@@ -75,8 +80,8 @@
     <string name="button_confirm_booking_label">Confirm Booking</string>
 
     <!-- checkout dialog -->
-    <string name="checkout_dialog_title">Thank You for Your Order!</string>
-    <string name="checkout_success_message">Your order has been successfully placed. Please hold on; our team will contact you shortly.</string>
+    <string name="checkout_dialog_title">Engineering Session Booked!</string>
+    <string name="checkout_success_message">Your booking has been confirmed. Our engineering team will contact you shortly to discuss the project.</string>
     <string name="checkout_dialog_confirm">Done</string>
 
     <!-- bookings screen -->
