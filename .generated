@@ -1,0 +1,31 @@
+AssetBasedConstructor
+donor: ServiceAppDonor (app.service.donor)
+project: Polemasket (retail.polemasket.digital)
+prefix: RLADL
+seed: -1191100720002752842
+app/src/main/java/app/service/donor/ui/composable/approot/bottombar -> v_signature
+app/src/main/java/app/service/donor/ui/composable/approot/topbar -> v_signature
+app/src/main/java/app/service/donor/ui/composable/screen/bookings/card -> v_booking_card_3
+app/src/main/java/app/service/donor/ui/composable/screen/bookings/dialog -> v_cancel_booking_dialog_2
+app/src/main/java/app/service/donor/ui/composable/screen/checkout/button -> v_checkout_button_3
+app/src/main/java/app/service/donor/ui/composable/screen/checkout/field -> v_checkout_field_3
+app/src/main/java/app/service/donor/ui/composable/screen/checkout/form -> v_checkout_form_2
+app/src/main/java/app/service/donor/ui/composable/screen/home/card -> v_card_big1
+app/src/main/java/app/service/donor/ui/composable/screen/home/filter -> v_filter3
+app/src/main/java/app/service/donor/ui/composable/screen/home/slider -> v_slider4
+app/src/main/java/app/service/donor/ui/composable/screen/onboarding/controls -> v_onboarding_controls_4
+app/src/main/java/app/service/donor/ui/composable/screen/onboarding/icon -> v_onboarding_icon_8
+app/src/main/java/app/service/donor/ui/composable/screen/onboarding/text -> v_onboarding_text_3
+app/src/main/java/app/service/donor/ui/composable/screen/servicedetails/benefits -> v_servicedetails_benefits_6
+app/src/main/java/app/service/donor/ui/composable/screen/servicedetails/button -> v_servicedetails_button_2
+app/src/main/java/app/service/donor/ui/composable/screen/servicedetails/image -> v_servicedetails_image_3
+app/src/main/java/app/service/donor/ui/composable/screen/servicedetails/includedlist -> v_servicedetails_includedlist_3
+app/src/main/java/app/service/donor/ui/composable/screen/servicedetails/layout -> v_servicedetails_layout_2
+app/src/main/java/app/service/donor/ui/composable/screen/servicedetails/summary -> v_servicedetails_summary_1
+app/src/main/java/app/service/donor/ui/composable/screen/settings/card -> v_settings_card_2
+app/src/main/java/app/service/donor/ui/composable/screen/shared/loadingplaceholder -> v_loadingplaceholder_3
+app/src/main/java/app/service/donor/ui/composable/screen/shared/sectiontitle -> v_section_title_7
+app/src/main/java/app/service/donor/ui/composable/screen/splash -> v_splash_2
+app/src/main/java/app/service/donor/ui/theme -> v_cp4600
+app/src/main/java/app/service/donor/ui/theme/dimens -> v_strict
+app/src/main/java/app/service/donor/ui/theme/typography -> v_font_neutral
